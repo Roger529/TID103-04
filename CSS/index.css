@@ -1,0 +1,389 @@
+@import url('reset.css');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAF0E6;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+/* -- 導航列 -- */
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #8C593B;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.navbar img{
+    width: auto;
+    height: 147px;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon{
+    display: flex;
+    gap: 30px;
+}
+
+/* 主標題區域樣式 */
+.container{
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+.hero-section {
+    background-image:url('../img/Pink\ Illustrative\ Japanese\ Beautiful\ Places\ Youtube\ Thumbnail\ \ \(1200\ x\ 700\ 像素\).svg') ;
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.hero-section h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.content-button {
+    display: inline-block; 
+    margin-top: 50px; 
+}
+
+.content-button a {
+    text-decoration: none;
+    background-color: #000; 
+    color: #fff; 
+    border-radius: 30px; 
+    padding: 10px 15px; 
+    font-weight: bold;
+}
+
+.content-button a:hover {
+    background-color: #444; 
+}
+/* 最新消息區域樣式 */
+.news h2{
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.news ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.news li {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+.news li a{
+    text-decoration: none;
+    color: black;
+}
+
+.news img {
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.news p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* 限時搶購樣式 */
+.sale-section {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.sale-section h2 {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.sale-section ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.sale-section li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.sale-section li:hover {
+    transform: translateY(-5px);
+}
+.limited{
+    color: red;
+    font-weight: bold;
+}
+
+.sale-section a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px;
+}
+
+.sale-section img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.discount {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* 藥品熱門排行樣式 */
+.top-sale {
+    max-width: 1200px;  
+    margin: 40px auto;
+}
+
+.top-sale h2{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.top-sale ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.top-sale li{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.top-sale li:hover {
+    transform: translateY(-5px);
+}
+
+.top-sale a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 15px;
+}
+
+.top-sale img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/* 食品熱門排行 */
+.top-sale2 {
+    max-width: 1200px;  
+    margin: 40px auto;
+}
+
+.top-sale2 h2{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.top-sale2 ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.top-sale2 li{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    line-height: 1.6;
+    width: 250px;
+}
+
+.top-sale2 li:hover {
+    transform: translateY(-5px);
+}
+
+.top-sale2 a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 15px;
+}
+
+.top-sale2 img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* -----排行------- */
+.rank-badge-rank-1{
+    background-color: gold;
+    text-align: center;
+}
+.rank-badge-rank-2{
+    background-color: silver;
+    text-align: center;
+}
+.rank-badge-rank-3{
+    background-color: brown;
+    text-align: center;
+}
+.rank-badge-rank-4{
+    background-color: #E1E0DE;
+    text-align: center;
+}
+
+/* 顧客評價 */
+
+.customer-rating{
+    max-width: 1200px;  
+    margin: 40px auto;
+}
+.customer-rating h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.customer-rating ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.customer-rating li{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    line-height: 1.6;
+    padding: 15px;
+}
+
+.rating-section-top{
+    display: flex;
+}
+
+.rating-section-right{
+    padding-left: 10px;
+}
+
+.customer-rating a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 15px;
+}
+
+.customer-rating img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* ---FOOTER--- */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3E3D3D;
+    padding: 20px 120px;
+    color: white;
+}
+
+.footer img {
+    width: auto;
+    height: 147px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-icon{
+    display: flex;
+    gap: 10px;
+}
+.footer-icon a{
+    color: white;
+}

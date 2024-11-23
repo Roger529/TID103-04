@@ -1,0 +1,268 @@
+@import url('reset.css');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAF0E6;
+}
+/* -- 導航列 -- */
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #8C593B;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.navbar img{
+    width: auto;
+    height: 147px;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon{
+    display: flex;
+    gap: 30px;
+}
+/* 主要內容 */
+.container{
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 100px 120px;
+}
+/* shop step */
+.shop-step{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+}
+.first-step,.second-step,.third-step{
+    display: flex;
+    position: relative;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.step-title{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.step-title::before{
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 120px;
+    bottom: 15px;
+}
+/* --------購物車------------- */
+.shop-cart{
+    /* border: 1px solid black; */
+}
+
+.cart-title{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+.cart-title::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute; 
+    left: 0px;
+    bottom: -40px;
+}
+
+.cart-main{
+    margin-bottom: 20px;
+}
+
+.cart-main p{
+    width: 110px;
+}
+
+.cart-main img{
+    width: 100px;
+    height: 100px;
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    margin: top 50px;
+    align-items: center;
+}
+
+.cart-item2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+    position: relative;
+}
+
+.cart-item2::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #636060;
+    position: absolute;
+    left: 0px;
+    bottom: -40px;
+}
+
+/* ------結帳配送------ */
+
+.options{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.delivery{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.delivery p{
+    font-size: 13px;
+}
+.delivery select{
+    width: 200px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.total{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    justify-content: space-evenly;
+    font-weight: bold;
+
+    position: relative;
+}
+
+.inside-total{
+    display: flex;
+    position: relative;
+}
+
+.inside-total::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+}
+
+.left-total{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right-total{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 200px;
+}
+
+.bottom-total{
+    display: flex;
+    gap: 200px;
+}
+
+.checkout-btn{
+    width: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position:absolute;
+    right: 105px;
+    bottom: -30px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* ---FOOTER--- */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3E3D3D;
+    padding: 20px 120px;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer img {
+    width: auto;
+    height: 147px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-icon{
+    display: flex;
+    gap: 10px;
+}
+.footer-icon a{
+    color: white;
+}

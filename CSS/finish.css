@@ -1,0 +1,128 @@
+@import url('reset.css');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAF0E6;
+}
+
+/* -- 導航列 -- */
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #8C593B;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.navbar img{
+    width: auto;
+    height: 147px;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon{
+    display: flex;
+    gap: 30px;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 100px 120px;
+}
+
+.shop-step{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+}
+.first-step,.second-step,.third-step{
+    display: flex;
+    position: relative;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.step-title{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.step-title::before{
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 120px;
+    bottom: 15px;
+}
+
+.thanks{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 100px 0;
+    line-height: 1.6;
+}
+
+/* ---FOOTER--- */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3E3D3D;
+    padding: 20px 120px;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer img {
+    width: auto;
+    height: 147px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-icon{
+    display: flex;
+    gap: 10px;
+}
+.footer-icon a{
+    color: white;
+}

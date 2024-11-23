@@ -1,0 +1,284 @@
+@import url('reset.css');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAF0E6;
+}
+/* -- 導航列 -- */
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #8C593B;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.navbar img{
+    width: auto;
+    height: 147px;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon{
+    display: flex;
+    gap: 30px;
+}
+/* 主要內容 */
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+/* -- 路徑導航 -- */
+.bar ul{
+    display: flex;
+    gap: 10px;
+    padding: 80px 120px;
+}
+
+.bar a{
+    text-decoration: none;
+    color: #000;
+}
+/* 購物攔 */
+.shop{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 40px 120px;
+}
+
+.left-section {
+    display: flex;
+    gap: 20px;
+}
+
+.small-image{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.small-image img{
+    width: 100%;
+    height: auto;
+}
+
+
+.shop img {
+    width: 100px;
+    height: 100px;
+}
+.main-image img{
+    width: 400px;
+    height: 400px;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price{
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.price ::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute; 
+    left: 0px;
+    top: 50px;
+}
+
+.right-section ul{
+    margin: 40px 0;
+}
+
+.right-section li{
+    font-size: 16px;
+}
+
+.specification p{
+    margin-bottom: 30px;
+}
+
+.specification button{
+    border: 1px solid black;
+    background-color: #FAF0E6;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.specification button:hover{
+    background-color: #8C593B;
+    color: white;
+}
+
+.purchase-line{
+    display: flex;
+    margin: 30px 0;
+    justify-self: start;
+}
+
+.quantity select{
+    margin-right: 10px;
+    background-color: #DADADA;
+    border-radius: 3px;
+    width: 50px;
+    text-align: center;
+}
+
+.quantity select option{
+    background-color: #fff;
+}
+
+.purchase{
+    display: flex;
+    gap: 5px;
+}
+
+.purchase button{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.purchase button:hover{
+    background-color: red;
+    color: white;
+}
+
+.purchase a{
+    border:none;
+    border-radius: 5px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.purchase a:hover{
+    background-color: white;
+    color: red;
+}
+
+.product-description{
+    margin: 100px 120px 30px 120px;
+    position: relative;
+}
+
+.product-description h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-description h3::before{
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    position: absolute; 
+    left: 25%;
+    top: 40px;
+}
+
+.product-description p{
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* 別人也看了 */
+
+.related-product{
+    margin: 100px 120px 30px 120px;
+}
+
+.related-product h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.related-product ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.related-product li img{
+    width: 100px;
+    height: 100px;
+}
+
+.related-product li p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.related-product ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ---FOOTER--- */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3E3D3D;
+    padding: 20px 120px;
+    color: white;
+}
+
+.footer img {
+    width: auto;
+    height: 147px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-icon{
+    display: flex;
+    gap: 10px;
+}
+.footer-icon a{
+    color: white;
+}
