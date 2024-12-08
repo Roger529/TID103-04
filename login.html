@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="./CSS/loginRWD.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>login</title>
 </head>
 <body>
         <!-- 導航列 -->
-        <header class="navbar">
-            <a href="index.html"><img src="./img/Red Simple Japanese Restaurant  Logo.svg" alt="Logo"></a>
-            <ul>
-                <li><a href="news.html">最新消息</a></li>
-                <li><a href="shop1.html">食品</a></li>
-                <li><a href="shop2.html">健康</a></li>
-                <li><a href="about-us.html">關於我們</a></li>
-            </ul>
-            <div class="icon">
-                <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
-                <a href="shop-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </header>
+    <header class="navbar">
+        <a href="index.html"><img src="./img/logo.svg" alt="Logo"></a>
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="shop1.html">食品</a></li>
+            <li><a href="shop2.html">健康</a></li>
+            <li><a href="about-us.html">關於我們</a></li>
+        </ul>
+        <div class="icon">
+            <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+            <a href="shop-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
     
         <!-- 主要內容容器 -->
         <div class="container">
@@ -49,7 +53,7 @@
         </div>
         <!-- 頁腳 -->
         <footer class="footer">
-            <img src="./img/Red Simple Japanese Restaurant  Logo.svg" alt="Logo">
+            <img src="./img/logo.svg" alt="Logo">
             <div class="footer-links">
                 <a href="#">常見問題</a>
                 <a href="#">服務條款</a>
@@ -62,6 +66,6 @@
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </footer>
-    
+        <script src="./JS/login.js"></script>
 </body>
 </html>

@@ -1,0 +1,261 @@
+@media screen and (max-width: 820px) {
+    .navbar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: auto;
+        padding: 0 10px;
+    }
+
+    .navbar img{
+        width: auto;
+        height: 50px;
+        padding: 5px 0;
+    }
+
+    .hamburger-menu {
+        display: block;
+        order: 2; 
+    }
+
+    .navbar a {
+        display: block;
+        order: 1; /* 設置 LOGO 的順序 */
+        color: black;
+    }
+
+    /* nav-links 初始狀態 - 隱藏在左側螢幕外 */
+    .nav-links {
+        position: absolute;
+        top: 63px;
+        left: -100%; /* 初始位置 - 在視窗外的左側 */
+        width: 90%;
+        height: auto;
+        background-color: white;
+        padding: 20px;
+        transition: transform 0.3s ease-in-out, left 0.3s ease-in-out;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* nav-links 顯示狀態 - 從左側滑入 */
+    .nav-links.show {
+        left: 0; /* 顯示到視窗內 */
+        transform: translateX(0);
+    }
+
+    /* 在 .show 類被添加之前 nav-links 的 transform 初始狀態 */
+    .nav-links {
+        transform: translateX(-100%); /* 初始位置從螢幕外的左側 */
+    }
+
+    .icon a{
+       color: white;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .hero-section {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 370px;
+    }
+
+    .hero-content{
+        padding: 0;
+        gap: 10px;
+        position: absolute;
+        bottom: 75%;
+        left: 10%;
+    }
+
+    .hero-section h1{
+        font-size: 24px;
+    }
+
+    .hero-section p{
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .content-button{
+        margin: 0;
+    }
+
+    .content-button a {
+        padding: 7px 10px;
+        font-size: 11px;
+    }
+
+    .news h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .news ul{
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .news li{
+        width: 200px;
+    }
+
+    .news img {
+        width: 100%;
+    }
+
+    .sale-section{
+        padding: 8px;
+    }
+
+    .sale-section h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .sale-section ul{
+        
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .sale-section li{
+        width: 200px;
+    }
+
+    .sale-section img {
+        width: 100%;
+    }
+
+    .top-sale2 {
+        padding: 8px;
+    }
+
+    .top-sale h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .top-sale ul{
+        gap: 10px;
+        margin-top: 20px;
+        padding: 8px;
+    }
+
+    .top-sale li{
+        width: 200px;
+    }
+
+    .top-sale2 h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .top-sale2 ul{
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .top-sale2 li{
+        width: 200px;
+    }
+
+    .top-sale2 img {
+        width: 100%;
+    }
+
+    .customer-rating h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .customer-rating ul{
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+        padding-left: 20px;
+        justify-content: center;
+    }
+
+    .customer-rating li{
+        width: 300px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;  /* 減少上下左右的內邊距 */
+        text-align: center;
+    }
+
+    .footer img {
+        height: 50px;  /* 縮小 logo 高度 */
+         /* 縮小 logo 和下方內容的距離 */
+    }
+
+    .footer-links {
+        flex-direction: row;  /* 將連結保持為水平排列 */
+        flex-wrap: wrap;  /* 讓連結可以自動換行 */
+        gap: 10px;  /* 縮小連結間距 */
+        justify-content: center;  /* 讓連結在中間對齊 */
+        margin-bottom: 5px;
+    }
+
+    .footer-links a {
+        font-size: 12px;  /* 縮小文字尺寸 */
+    }
+
+    .footer-icon {
+        margin-bottom: 10px;  /* 減小與上方內容的距離 */
+        gap: 10px;  /* 縮小圖標間距 */
+    }
+
+    .footer-icon a {
+        font-size: 16px;  /* 調整圖標的大小以節省空間 */
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .hero-section {
+        background-size: cover;
+        background-position: left;
+        width: 100%;
+        height: 280px;
+    }
+
+    .hero-content{
+        padding: 0;
+        gap: 5px;
+        position: absolute;
+        bottom: 75%;
+        left: 15%;
+    }
+
+    .hero-section h1{
+        font-size: 18px;
+    }
+
+    .hero-section p{
+        font-size: 10px;
+    }
+
+    .news ul{
+        flex-wrap: wrap;
+    }
+
+    .sale-section ul{
+        flex-wrap: wrap;
+    }
+
+    .top-sale ul{
+        flex-wrap: wrap;
+    }
+
+    .top-sale2 ul{
+        flex-wrap: wrap;
+    }
+}

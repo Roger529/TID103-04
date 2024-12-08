@@ -1,0 +1,105 @@
+@media screen and (max-width: 820px) {
+    .navbar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: auto;
+        padding: 0 10px;
+    }
+
+    .navbar img{
+        width: auto;
+        height: 50px;
+        padding: 5px 0;
+    }
+
+    .hamburger-menu {
+        display: block;
+        order: 2; 
+    }
+
+    .navbar a {
+        display: block;
+        order: 1; 
+        color: black;
+    }
+
+    /* nav-links 初始狀態 - 隱藏在左側螢幕外 */
+    .nav-links {
+        position: absolute;
+        top: 63px;
+        left: -100%; /* 初始位置 - 在視窗外的左側 */
+        width: 90%;
+        height: auto;
+        background-color: white;
+        padding: 20px;
+        transition: transform 0.3s ease-in-out, left 0.3s ease-in-out;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* nav-links 顯示狀態 - 從左側滑入 */
+    .nav-links.show {
+        left: 0; /* 顯示到視窗內 */
+        transform: translateX(0);
+    }
+
+    /* 在 .show 類被添加之前 nav-links 的 transform 初始狀態 */
+    .nav-links {
+        transform: translateX(-100%); /* 初始位置從螢幕外的左側 */
+    }
+
+    .icon a{
+       color: white;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px; 
+        text-align: center;
+    }
+
+    .footer img {
+        height: 50px;  
+       
+    }
+
+    .footer-links {
+        flex-direction: row;  
+        flex-wrap: wrap;  
+        gap: 10px;  
+        justify-content: center;  
+        margin-bottom: 5px;
+    }
+
+    .footer-links a {
+        font-size: 12px;  
+    }
+
+    .footer-icon {
+        margin-bottom: 10px;  
+        gap: 10px;  
+    }
+
+    .footer-icon a {
+        font-size: 16px;  
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .shop-step{
+        gap: 25px;
+    }
+
+    .product-card ul{
+        max-width: 230px;
+    }
+    
+}

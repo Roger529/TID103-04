@@ -1,6 +1,6 @@
 @import url('reset.css');
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FAF0E6;
 }
@@ -11,15 +11,20 @@ body{
     align-items: center;
     background-color: #8C593B;
     justify-content: space-between;
+    max-width: 1440px;
     padding: 0 120px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar img{
     width: auto;
-    height: 147px;
+    height: 70px;
+    padding: 10px 0;
 }
 
-.navbar ul{
+.nav-links{
     display: flex;
     gap: 100px;
     list-style: none;
@@ -27,35 +32,49 @@ body{
     margin: 0;
 }
 
-.navbar a{
-    text-decoration: none;
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
 }
 
-.icon{
+.icon {
     display: flex;
     gap: 30px;
 }
 
-.container{
-    max-width: 1440px;
-    margin: 0px auto;
-    padding: 100px 120px;
+.navbar a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
 }
 
-.shop-step{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 50px auto;
+.navbar a:hover {
+    transform: translateY(-3px);
 }
-.first-step,.second-step,.third-step{
+
+
+/* shop step */
+.shop-step {
     display: flex;
+    justify-content: center; 
+    align-items: center;     
+    margin: 30px auto;
+    gap: 50px;
+}
+
+.first-step, .second-step, .third-step {
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
-.circle{
+.circle {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -65,47 +84,118 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}   
+}
 
-.step-title{
+.first-step > .circle, .second-step > .circle {
+    background-color: #c7c7c7;
+    color: white;
+}
+
+.third-step > .circle {
+    background-color: #8C593B;
+    color: white;
+}
+
+.step-title1, .step-title2, .step-title3 {
     font-weight: bold;
     display: flex;
     align-items: center;
     margin-left: 10px;
+    color: #c7c7c7;
 }
 
-.step-title::before{
-    content: "";
-    width: 150px;
-    height: 1px;
-    background-color: black;
-    position: absolute;
-    left: 120px;
-    bottom: 15px;
+.step-title3 {
+    color: #8C593B;
 }
 
-.thanks{
+/* 主要內容容器 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 100px 0;
+    min-height: 80vh;
+}
+
+.thanks {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 22px;
     line-height: 1.6;
+    font-weight: bold;
+}
+
+.thanks h2 {
+    color: #8C593B;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.thanks p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* 訂單詳細資訊 */
+.order-summary {
+    text-align: left;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+.order-summary h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.order-summary p {
+    font-size: 16px;
+}
+
+/* 追蹤訂單按鈕 */
+.track-order {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.track-btn {
+    display: inline-block;
+    background-color: #8C593B;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.track-btn:hover {
+    background-color: #6F482B;
 }
 
 /* ---FOOTER--- */
 .footer {
+    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #3E3D3D;
-    padding: 20px 120px;
+    padding: 0 120px;
     color: white;
-    margin-top: 30px;
 }
 
 .footer img {
     width: auto;
-    height: 147px;
+    height: 80px;
+    padding: 10px 0;
 }
 
 .footer-links {
@@ -116,13 +206,25 @@ body{
 .footer-links a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ccc;
 }
 
 .footer-icon{
     display: flex;
     gap: 10px;
 }
-.footer-icon a{
+.footer-icon a {
+    font-size: 18px;
     color: white;
+    transition: transform 0.3s;
 }
+
+.footer-icon a:hover {
+    transform: scale(1.1);
+}
+
