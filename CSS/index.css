@@ -5,11 +5,6 @@ body{
     background-color: #FAF0E6;
 }
 
-.container{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 120px;
-}
 
 /* -- 導航列 -- */
 .navbar{
@@ -17,15 +12,20 @@ body{
     align-items: center;
     background-color: #8C593B;
     justify-content: space-between;
+    max-width: 1440px;
     padding: 0 120px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar img{
     width: auto;
-    height: 147px;
+    height: 70px;
+    padding: 10px 0;
 }
 
-.navbar ul{
+.nav-links{
     display: flex;
     gap: 100px;
     list-style: none;
@@ -33,17 +33,33 @@ body{
     margin: 0;
 }
 
-.navbar a{
-    text-decoration: none;
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
 }
 
-.icon{
+.icon {
     display: flex;
     gap: 30px;
 }
+
+.navbar a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.navbar a:hover {
+    transform: translateY(-3px);
+}
+
+
 
 /* 主標題區域樣式 */
 .container{
@@ -52,7 +68,8 @@ body{
 }
 
 .hero-section {
-    background-image:url('../img/Pink\ Illustrative\ Japanese\ Beautiful\ Places\ Youtube\ Thumbnail\ \ \(1200\ x\ 700\ 像素\).svg') ;
+    background-image:url('../img/Pink\ Illustrative\ Japanese\ Beautiful\ Places\ Youtube\ Thumbnail\ \ \(網站\)\ \(1\).png') ;
+    max-width: 1440px;
     width: 100%;
     height: 700px;
     background-repeat: no-repeat;
@@ -63,7 +80,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 130px;
 }
 
 .hero-section h1 {
@@ -78,7 +95,7 @@ body{
 }
 .content-button {
     display: inline-block; 
-    margin-top: 50px; 
+    margin-top: 20px; 
 }
 
 .content-button a {
@@ -268,7 +285,7 @@ body{
     border-radius: 10px;
     transition: transform 0.3s ease;
     line-height: 1.6;
-    width: 250px;
+    width: 100%;
 }
 
 .top-sale2 li:hover {
@@ -295,11 +312,11 @@ body{
     text-align: center;
 }
 .rank-badge-rank-2{
-    background-color: silver;
+    background-color: #E1E0DE;
     text-align: center;
 }
 .rank-badge-rank-3{
-    background-color: brown;
+    background-color: #E1E0DE;
     text-align: center;
 }
 .rank-badge-rank-4{
@@ -311,6 +328,7 @@ body{
 
 .customer-rating{
     max-width: 1200px;  
+    width: 100%;
     margin: 40px auto;
 }
 .customer-rating h2{
@@ -349,24 +367,26 @@ body{
 }
 
 .customer-rating img{
-    width: 100px;
+    width: 100%;
     height: 100px;
 }
 
 
 /* ---FOOTER--- */
 .footer {
+    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #3E3D3D;
-    padding: 20px 120px;
+    padding: 0 120px;
     color: white;
 }
 
 .footer img {
     width: auto;
-    height: 147px;
+    height: 80px;
+    padding: 10px 0;
 }
 
 .footer-links {
@@ -377,13 +397,27 @@ body{
 .footer-links a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ccc;
 }
 
 .footer-icon{
     display: flex;
     gap: 10px;
 }
-.footer-icon a{
+.footer-icon a {
+    font-size: 18px;
     color: white;
+    transition: transform 0.3s;
 }
+
+.footer-icon a:hover {
+    transform: scale(1.1);
+}
+
+
+

@@ -4,82 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/shop-cart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/shop-cartRWD.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>shop-cart</title>
 </head>
 <body>
         <!-- 導航列 -->
         <header class="navbar">
-            <a href="index.html"><img src="./img/Red Simple Japanese Restaurant  Logo.svg" alt="Logo"></a>
-            <ul>
+            <a href="index.html"><img src="./img/logo.svg" alt="Logo"></a>
+            <div class="hamburger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
                 <li><a href="news.html">最新消息</a></li>
                 <li><a href="shop1.html">食品</a></li>
                 <li><a href="shop2.html">健康</a></li>
                 <li><a href="about-us.html">關於我們</a></li>
             </ul>
             <div class="icon">
-                <a href="#"><i class="fa-solid fa-circle-user"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+                <a href="shop-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </header>
+        
+        <!--購物步驟-->
+        <div class="shop-step">
+            <div class="first-step">
+                <div class="circle">1</div>
+                <div class="step-title1">訂單明細確認</div>
+            </div>
+            <div class="second-step">
+                <div class="circle">2</div>
+                <div class="step-title2">運送方式</div>
+            </div>
+            <div class="third-step">
+                <div class="circle">3</div>
+                <div class="step-title3">付款資訊</div>
+            </div>
+        </div>
     
         <!-- 主要內容容器 -->
         <div class="container">
-            <!--購物步驟-->
-            <div class="shop-step">
-                <div class="first-step">
-                    <div class="circle">1</div>
-                    <div class="step-title">寄送地址</div>
-                </div>
-                <div class="second-step">
-                    <div class="circle">2</div>
-                    <div class="step-title">運送方式</div>
-                </div>
-                <div class="third-step">
-                    <div class="circle">3</div>
-                    <div class="step-title">付款資訊</div>
-                </div>
-            </div>
             <!--購物車-->
-            <div class="shop-cart">
-                <div class="cart-title">
-                    <h2>商品資訊</h2>
+            <div class="cart">
+                <h1>購物車</h1>
+                <div class="product">
+                    <a href="">
+                        <img src="./img/snacks5.png" alt="">
+                        <div class="right">
+                            <h3>Bocky百奇(巧克力/草莓/抹茶/牛奶餅乾)</h3>
+                            <span class="price">$50</span>
+                        </div>
+                    </a>
+                    <div class="quantity-container">
+                        <button class="decrement">-</button>
+                        <input type="number" class="quantity" value="1" readonly>
+                        <button class="increment">+</button>
+                    </div>                      
                 </div>
-                <div class="cart-main">
-                    <div class="cart-item">
-                        <img src="./img/chocolate5.jpg" alt="">
-                        <p>Bocky百奇<br>(巧克力/草莓/抹茶/牛奶餅乾)</p>
-                        <p>$29</p>
-                        <p>10</p>
-                        <p>$290</p>
-                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                <div class="product">
+                    <a href="">
+                    <img src="./img/snacks4.png" alt="">
+                    <div class="right">
+                        <h3>黑雷神巧克力</h3>
+                        <span class="price">$9</span>
                     </div>
-                    <div class="cart-item2">
-                        <img src="./img/chocolate1.jpg" alt="">
-                        <p>黑雷神巧克力</p>    
-                        <p>$9</p>
-                        <p>20</p>
-                        <p>$180</p>
-                        <a href="#"><i class="fa-solid fa-x"></i></a>
-                    </div>
+                </a>
+                 <!-- 修改部分的數量輸入框 -->
+                    <div class="quantity-container">
+                        <button class="decrement">-</button>
+                        <input type="number" class="quantity" value="1" readonly>
+                        <button class="increment">+</button>
+                    </div>                
+
                 </div>
-            </div>
-            <!-- 結帳配送 -->
-            <div class="options">
-                <div class="delivery">
-                    <p>選擇運送及付款方式</p>
-                    <p>寄送方式</p>
-                    <select>
-                        <option>7-11</option>
-                        <option>全家</option>
-                        <option>萊爾富</option>
-                    </select>
-                    <p>選擇付款方式</p>
-                    <select>
-                        <option>貨到付款</option>
-                        <option>信用卡</option>
-                    </select>
-                </div>
+                <!-- 訂單確認 -->
                 <div class="total">
                     <p>訂單確認</p>
                     <div class="inside-total">
@@ -96,15 +95,129 @@
                         <p>合計:</p>
                         <p>$530</p>
                     </div>
-                    <a href="finish.html">
+                    <a href="transport.html">
                     <button class="checkout-btn">結帳</button>
                     </a>
-                </div>        
-            </div>
+                </div> 
+                <div class="product-card">
+                    <h3>加購商品</h3>
+                    <ul id="product-list">
+                        <li class="product-item" data-brand="Xalbee" data-category="洋芋片">
+                            <a href="shop-info.html">
+                                <img src="./img/snacks1.png" alt="">
+                                <div class="product-details">
+                                    <p class="up-price">Xalbee 洋芋片</p>
+                                    <p class="price">$30</p>
+                                    <p class="below-price">庫存剩餘: 10</p>
+                                    <p class="below-price">成交量: 100</p>
+                                    <p class="below-price">⭐⭐⭐⭐⭐ (50)</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item" data-brand="天八" data-category="米果">
+                            <a href="shop-info.html">
+                                <img src="./img/snacks2.png" alt="">
+                                <div class="product-details">
+                                    <p class="up-price">天八相撲米菓</p>
+                                    <p class="price">$65</p>
+                                    <p class="below-price">庫存剩餘: 22</p>
+                                    <p class="below-price">成交量: 100</p>
+                                    <p class="below-price">⭐⭐⭐⭐⭐ (50)</p>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="product-item" data-brand="嘎拉姆酒" data-category="洋芋片">
+                            <a href="shop-info.html">
+                                <img src="./img/snacks3.png" alt="">
+                                <div class="product-details">
+                                    <p class="up-price">嘎拉姆酒洋芋片</p>
+                                    <p class="price">$70</p>
+                                    <p class="below-price">庫存剩餘: 12</p>
+                                    <p class="below-price">成交量: 50</p>
+                                    <p class="below-price">⭐⭐⭐⭐⭐ (50)</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item" data-brand="JOYSOY" data-category="巧克力">
+                            <a href="shop-info.html">
+                                <img src="./img/snacks4.png" alt="">
+                                <div class="product-details">
+                                    <p class="up-price">JOYSOY巧克力</p>
+                                    <p class="price">$15</p>
+                                    <p class="below-price">庫存剩餘: 30</p>
+                                    <p class="below-price">成交量: 20</p>
+                                    <p class="below-price">⭐⭐⭐⭐⭐ (50)</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item" data-brand="白帽子" data-category="巧克力">
+                            <a href="shop-info.html">
+                                <img src="./img/snacks5.png" alt="">
+                                <div class="product-details">
+                                    <p class="up-price">白帽子巧克力</p>
+                                    <p class="price">$20</p>
+                                    <p class="below-price">庫存剩餘: 21</p>
+                                    <p class="below-price">成交量: 52</p>
+                                    <p class="below-price">⭐⭐⭐⭐⭐ (50)</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item" data-brand="JOYSOY" data-category="軟糖">
+                            <a href="shop-info.html">
+                                <img src="./img/snacks6.png" alt="">
+                                <div class="product-details">
+                                    <p class="up-price">JOYSOY軟糖</p>
+                                    <p class="price">$15</p>
+                                    <p class="below-price">庫存剩餘: 33</p>
+                                    <p class="below-price">成交量: 20</p>
+                                    <p class="below-price">⭐⭐⭐⭐⭐ (50)</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item" data-brand="白帽子" data-category="軟糖">
+                            <a href="shop-info.html">
+                                <img src="./img/snacks7.png" alt="">
+                                <div class="product-details">
+                                    <p class="up-price">白帽子軟糖</p>
+                                    <p class="price">$12</p>
+                                    <p class="below-price">庫存剩餘: 50</p>
+                                    <p class="below-price">成交量: 10</p>
+                                    <p class="below-price">⭐⭐⭐⭐⭐ (50)</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item" data-brand="Xalbee" data-category="米果">
+                            <a href="shop-info.html">
+                                <img src="./img/snacks8.png" alt="">
+                                <div class="product-details">
+                                    <p class="up-price">Xalbee米果</p>
+                                    <p class="price">$25</p>
+                                    <p class="below-price">庫存剩餘: 44</p>
+                                    <p class="below-price">成交量: 68</p>
+                                    <p class="below-price">⭐⭐⭐⭐⭐ (50)</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item" data-brand="Xalbee" data-category="巧克力">
+                            <a href="shop-info.html">
+                                <img src="./img/snacks9.png" alt="">
+                                <div class="product-details">
+                                    <p class="up-price">抹茶巧克力</p>
+                                    <p class="price">$30</p>
+                                    <p class="below-price">庫存剩餘: 14</p>
+                                    <p class="below-price">成交量: 130</p>
+                                    <p class="below-price">⭐⭐⭐⭐⭐ (50)</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+            </div>           
+
         </div>
                <!-- 頁腳 -->
                <footer class="footer">
-                <img src="./img/Red Simple Japanese Restaurant  Logo.svg" alt="Logo">
+                <img src="./img/logo.svg" alt="Logo">
                 <div class="footer-links">
                 <a href="#">常見問題</a>
                 <a href="#">服務條款</a>
@@ -116,5 +229,7 @@
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
+
+            <script src="./JS/shop-cart.js"></script>   
 </body>
 </html>

@@ -4,58 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/finish.css">
+    <link rel="stylesheet" href="CSS/finishRWD.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>finish</title>
+    <title>感謝您的訂購</title>
 </head>
 <body>
+    <!-- 導航列 -->
     <header class="navbar">
-        <a href="index.html"><img src="./img/Red Simple Japanese Restaurant  Logo.svg" alt="Logo"></a>
-        <ul>
+        <a href="index.html"><img src="./img/logo.svg" alt="Logo"></a>
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links">
             <li><a href="news.html">最新消息</a></li>
             <li><a href="shop1.html">食品</a></li>
             <li><a href="shop2.html">健康</a></li>
             <li><a href="about-us.html">關於我們</a></li>
         </ul>
         <div class="icon">
-            <a href="#"><i class="fa-solid fa-circle-user"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+            <a href="shop-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </header>
-    <div class="container">
-        <!--購物步驟-->
-        <div class="shop-step">
-            <div class="first-step">
-                <div class="circle">1</div>
-                <div class="step-title">寄送地址</div>
-            </div>
-            <div class="second-step">
-                <div class="circle">2</div>
-                <div class="step-title">運送方式</div>
-            </div>
-            <div class="third-step">
-                <div class="circle">3</div>
-                <div class="step-title">付款資訊</div>
-            </div>
+    
+    <!-- 購物步驟 -->
+    <div class="shop-step">
+        <div class="first-step">
+            <div class="circle">1</div>
+            <div class="step-title1">訂單明細確認</div>
         </div>
+        <div class="second-step">
+            <div class="circle">2</div>
+            <div class="step-title2">運送方式</div>
+        </div>
+        <div class="third-step">
+            <div class="circle">3</div>
+            <div class="step-title3">付款資訊</div>
+        </div>
+    </div>
+
+    <!-- 主要內容容器 -->
+    <div class="container">
         <!-- 感謝訂購 -->
         <div class="thanks">
-            <h2>您的訂單以完成<br>感謝您的訂購</h2>
+            <h2>您的訂單已完成</h2>
+            <p>感謝您的訂購！我們會盡快處理您的訂單。</p>
+            <p>Thank You</p>
+        </div>
+
+        <!-- 訂單詳細資訊 -->
+        <div class="order-summary card">
+            <h3>訂單詳細資訊</h3>
+            <p><strong>訂單號碼:</strong> #123456</p>
+            <p><strong>訂單日期:</strong> 2024/12/01</p>
+            <p><strong>預計送達時間:</strong> 3-5 個工作日</p>
+        </div>
+        
+        <!-- 追蹤訂單 -->
+        <div class="track-order">
+            <a href="#" class="track-btn">追蹤訂單</a>
         </div>
     </div>
+
     <!-- 頁腳 -->
     <footer class="footer">
-        <img src="./img/Red Simple Japanese Restaurant  Logo.svg" alt="Logo">
+        <img src="./img/logo.svg" alt="Logo">
         <div class="footer-links">
-        <a href="#">常見問題</a>
-        <a href="#">服務條款</a>
-        <a href="#">退貨政策</a>
-        <a href="#">聯絡我們</a>
-    </div>
-    <div class="footer-icon">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-    
+            <a href="#">常見問題</a>
+            <a href="#">服務條款</a>
+            <a href="#">退貨政策</a>
+            <a href="#">聯絡我們</a>
+        </div>
+        <div class="footer-icon">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="./JS/finish.js"></script>
 </body>
 </html>

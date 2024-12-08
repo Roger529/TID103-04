@@ -1,14 +1,16 @@
 @import url('reset.css');
 
-body{
+/* --- 主體背景與容器 --- */
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FAF0E6;
+    color: #333;
 }
 
-.container{
-    max-width: 1440px;
+.container {
     margin: 0 auto;
     padding: 0 120px;
+    min-height: 100vh;
 }
 
 /* -- 導航列 -- */
@@ -17,15 +19,20 @@ body{
     align-items: center;
     background-color: #8C593B;
     justify-content: space-between;
+    max-width: 1440px;
     padding: 0 120px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar img{
     width: auto;
-    height: 147px;
+    height: 70px;
+    padding: 10px 0;
 }
 
-.navbar ul{
+.nav-links{
     display: flex;
     gap: 100px;
     list-style: none;
@@ -33,23 +40,39 @@ body{
     margin: 0;
 }
 
-.navbar a{
-    text-decoration: none;
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
 }
 
-.icon{
+.icon {
     display: flex;
     gap: 30px;
 }
 
+.navbar a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.navbar a:hover {
+    transform: translateY(-3px);
+}
+
+
+
+/* -- 路徑導航 -- */
 .bar ul{
-    list-style: none;
     display: flex;
     gap: 10px;
-    padding: 100px 120px;
+    padding: 20px 0;
 }
 
 .bar a{
@@ -57,66 +80,57 @@ body{
     color: #000;
 }
 
-/* -- 品牌故事 -- */
-.upper-section{
-    padding: 0 120px;
-    /* border: 1px solid black; */
+/* --- 品牌故事區塊 --- */
+.upper-section, .lower-section {
+    margin-top: 50px;
+    text-align: center;
 }
 
-.upper-section h1{
-    text-align: center;
+.upper-section h1, .lower-section h1 {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-.upper-section p{
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.5;
+.upper-section p, .item {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin: 10px auto;
+    max-width: 800px;
 }
 
-.lower-section{
-    /* border: 1px solid blue; */
-    font-size: 24px;
-    
-    padding: 100px 120px;
+.item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-.lower-section h1{
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 50px;
-}
-
-.item{
+/* --- 圖片庫 --- */
+.gallery {
     display: flex;
+    gap: 10px;
     justify-content: center;
-    text-align: center;
-    line-height: 1.6;
-    margin-bottom: 24px;
-    font-size: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.item h2{
-    font-weight: bold;
-}
-
-.gallery ul{
+.gallery ul {
     display: flex;
-    gap: 50px;
+    gap: 10px;
     list-style: none;
-    margin: 30px auto;
+    padding: 0;
+    margin: 0;
 }
 
-.gallery img{
-    display: block;
-    width: 350px;
-    height: 300px;
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
 }
 
+/* ---FOOTER--- */
 .footer {
+    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -127,7 +141,8 @@ body{
 
 .footer img {
     width: auto;
-    height: 147px;
+    height: 80px;
+    padding: 10px 0;
 }
 
 .footer-links {
@@ -138,13 +153,25 @@ body{
 .footer-links a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ccc;
 }
 
 .footer-icon{
     display: flex;
     gap: 10px;
 }
-.footer-icon a{
+.footer-icon a {
+    font-size: 18px;
     color: white;
+    transition: transform 0.3s;
 }
+
+.footer-icon a:hover {
+    transform: scale(1.1);
+}
+
