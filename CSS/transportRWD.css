@@ -104,4 +104,8 @@
     .checkout-button-container{
         margin: 20px;
     }
+
+    .checkout-btn{
+        width: 300px;
+    }
 }
